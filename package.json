@@ -16,5 +16,10 @@
   "bugs": {
     "url": "https://github.com/danielkuang7/zoom-app/issues"
   },
-  "homepage": "https://github.com/danielkuang7/zoom-app#readme"
+  "homepage": "https://github.com/danielkuang7/zoom-app#readme",
+  "dependencies": {
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "socket.io": "^3.1.0"
+  }
 }
