@@ -5,6 +5,8 @@ const myPeer = new Peer(undefined, {
     port: '3001'
 })
 
+const myVideo = document.createElement('video')
+
 myPeer.on('open', id =>{
     socket.emit('join-room', ROOM_ID, id)
 })
