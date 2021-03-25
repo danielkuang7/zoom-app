@@ -6,6 +6,7 @@ const myPeer = new Peer(undefined, {
 })
 
 const myVideo = document.createElement('video')
+myVideo.muted = true
 
 myPeer.on('open', id =>{
     socket.emit('join-room', ROOM_ID, id)
