@@ -12,7 +12,7 @@ navigator.mediaDevices.getUserMedia({
     video: true,
     audio: true
 }).then(stream => {
-    
+
 })
 
 myPeer.on('open', id =>{
@@ -24,3 +24,7 @@ myPeer.on('open', id =>{
 socket.on('user-connected', userId => {
 
 })
+
+function addVideoStream(video, stream){
+    
+}
