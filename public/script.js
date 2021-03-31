@@ -26,5 +26,5 @@ socket.on('user-connected', userId => {
 })
 
 function addVideoStream(video, stream){
-    
+    video.srcObject = stream
 }
