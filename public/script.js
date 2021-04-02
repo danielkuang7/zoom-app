@@ -27,4 +27,7 @@ socket.on('user-connected', userId => {
 
 function addVideoStream(video, stream){
     video.srcObject = stream
+    video.addEventListener('loadedmetadata', () => {
+        video.play()
+    })
 }
