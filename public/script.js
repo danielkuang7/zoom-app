@@ -13,6 +13,10 @@ navigator.mediaDevices.getUserMedia({
     audio: true
 }).then(stream => {
     addVideoStream(myVideo, stream)
+
+    socket.on('user-connected', userId => {
+        
+    })
 })
 
 myPeer.on('open', id =>{
