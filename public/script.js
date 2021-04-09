@@ -15,7 +15,7 @@ navigator.mediaDevices.getUserMedia({
     addVideoStream(myVideo, stream)
 
     socket.on('user-connected', userId => {
-        
+        connectToNewUser(userId, stream)
     })
 })
 
