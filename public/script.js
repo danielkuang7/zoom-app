@@ -29,6 +29,9 @@ function connectToNewUser(userId, stream){
     call.on('stream', userVideoStream => {
         addVideoStream(userVideoStream)
     })
+    call.on('close', () => {
+        video.remove()
+    })
 }
 
 socket.on('user-connected', userId => {
