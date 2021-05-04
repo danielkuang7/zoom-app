@@ -48,6 +48,8 @@ function connectToNewUser(userId, stream){
     call.on('close', () => {
         video.remove()
     })
+
+    peers[userId] = call
 }
 
 socket.on('user-connected', userId => {
